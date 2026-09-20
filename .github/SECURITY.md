@@ -1,47 +1,32 @@
-# Security Policy
+# Security policy
 
-## Supported Versions
+## Reporting a vulnerability
 
-Use this section to tell people about which versions of your project are currently being supported with security updates.
+Do not open a public issue for a suspected vulnerability.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
-| < 1.0   | :x:                |
+Use GitHub private vulnerability reporting in the affected repository when it is available. If the affected repository is unclear or private reporting is unavailable, email `guillou.gabriel@gmail.com` with the subject `DaemonCores security report`.
 
-## Reporting a Vulnerability
+Include the affected repository and revision, impact, reproduction steps, relevant configuration, and any proof of concept that can be shared safely. Remove unrelated credentials and personal data.
 
-We take the security of our project seriously. If you have discovered a security vulnerability, we appreciate your help in disclosing it to us in a responsible manner.
+## Supported state
 
-**Please do not report security vulnerabilities through public GitHub issues.**
+DaemonCores is under active development and does not currently publish a versioned long-term-support channel. Security work targets the current default branch and the most recent artifacts produced from it.
 
-Instead, please report them via email to [guillou.gabriel@gmail.com]. You should receive a response within 48 hours. If for some reason you do not, please follow up via email to ensure we received your original message.
+Older images, package repositories, installer media, and commits should be treated as unsupported unless a repository explicitly states otherwise.
 
-Please include the following information in your report:
+## Scope
 
-* Type of issue (e.g. buffer overflow, SQL injection, cross-site scripting, etc.)
-* Full paths of source file(s) related to the manifestation of the issue
-* The location of the affected source code (tag/branch/commit or direct URL)
-* Any special configuration required to reproduce the issue
-* Step-by-step instructions to reproduce the issue
-* Proof-of-concept or exploit code (if possible)
-* Impact of the issue, including how an attacker might exploit the issue
+Reports are especially useful for:
 
-This information will help us triage your report more quickly.
+- image or package supply-chain compromise;
+- privilege escalation introduced by project scripts or services;
+- unsafe installer or disk-selection behaviour;
+- signature, key, or repository verification bypasses;
+- credential exposure in workflows or build logs;
+- isolation failures in Proxmox, OSTree, composefs, or container integration caused by project code.
 
-## Preferred Languages
+Upstream vulnerabilities that reproduce without DaemonCores modifications should also be reported to the relevant upstream project.
 
-We prefer all communications to be in English.
+## Disclosure
 
-## Disclosure Policy
-
-When we receive a security bug report, we will:
-
-1. Confirm the problem and determine the affected versions
-2. Audit code to find any potential similar problems
-3. Prepare fixes for all releases still under maintenance
-4. Release new security fix versions as soon as possible
-
-## Comments on this Policy
-
-If you have suggestions on how this process could be improved, please submit a pull request.
+Reports are handled on a best-effort basis. The maintainer will confirm the affected component, coordinate a fix and advisory when appropriate, and agree on disclosure timing with the reporter. Do not assume a fixed response or release deadline for this community-maintained project.
