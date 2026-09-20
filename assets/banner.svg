@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">DaemonCores banner concept</title>
+  <desc id="desc">DaemonCores wordmark beside three flat system layers and an atomic core symbol.</desc>
+
+  <rect width="1280" height="320" fill="#0B1020" />
+  <rect x="0" y="0" width="12" height="320" fill="#2DD4BF" />
+
+  <g transform="translate(76 72) scale(.35)">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path
+        d="M 370 128 A 170 170 0 1 0 370 384"
+        stroke="#2DD4BF"
+        stroke-width="56"
+      />
+      <path d="M 387 197 H 424" stroke="#F4F7FB" stroke-width="28" />
+      <path d="M 387 315 H 424" stroke="#F4F7FB" stroke-width="28" />
+    </g>
+    <rect
+      x="202"
+      y="202"
+      width="108"
+      height="108"
+      rx="22"
+      fill="#F6B84A"
+      transform="rotate(45 256 256)"
+    />
+    <rect x="235" y="235" width="42" height="42" rx="9" fill="#0B1020" />
+  </g>
+
+  <text
+    x="286"
+    y="145"
+    fill="#F4F7FB"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="64"
+    font-weight="700"
+    letter-spacing="-2"
+  >DaemonCores</text>
+  <text
+    x="290"
+    y="193"
+    fill="#9BA8C7"
+    font-family="IBM Plex Mono, Consolas, monospace"
+    font-size="20"
+    letter-spacing="1"
+  >DEBIAN · BOOTC · OSTREE · PROXMOX VE</text>
+
+  <g transform="translate(820 49)">
+    <path d="M 0 116 L 176 14 L 352 116 L 176 218 Z" fill="#16213B" />
+    <path d="M 0 116 L 176 218 L 176 252 L 0 150 Z" fill="#111A30" />
+    <path d="M 352 116 L 176 218 L 176 252 L 352 150 Z" fill="#1C2948" />
+
+    <path d="M 44 94 L 176 18 L 308 94 L 176 170 Z" fill="#223252" />
+    <path d="M 44 94 L 176 170 L 176 194 L 44 118 Z" fill="#18243F" />
+    <path d="M 308 94 L 176 170 L 176 194 L 308 118 Z" fill="#293B60" />
+
+    <path d="M 91 69 L 176 20 L 261 69 L 176 118 Z" fill="#2DD4BF" />
+    <path d="M 91 69 L 176 118 L 176 137 L 91 88 Z" fill="#20AE9E" />
+    <path d="M 261 69 L 176 118 L 176 137 L 261 88 Z" fill="#43E0CD" />
+
+    <rect
+      x="147"
+      y="40"
+      width="58"
+      height="58"
+      rx="10"
+      fill="#F6B84A"
+      transform="rotate(45 176 69)"
+    />
+    <rect x="165" y="58" width="22" height="22" rx="4" fill="#0B1020" />
+  </g>
+</svg>

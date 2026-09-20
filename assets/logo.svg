@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">DaemonCores logo on dark background</title>
+  <desc id="desc">An open circular system layer surrounding a square core.</desc>
+
+  <rect width="512" height="512" rx="96" fill="#0B1020" />
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M 370 128 A 170 170 0 1 0 370 384"
+      stroke="#2DD4BF"
+      stroke-width="56"
+    />
+    <path d="M 387 197 H 424" stroke="#F4F7FB" stroke-width="28" />
+    <path d="M 387 315 H 424" stroke="#F4F7FB" stroke-width="28" />
+  </g>
+
+  <rect
+    x="202"
+    y="202"
+    width="108"
+    height="108"
+    rx="22"
+    fill="#F6B84A"
+    transform="rotate(45 256 256)"
+  />
+  <rect x="235" y="235" width="42" height="42" rx="9" fill="#0B1020" />
+</svg>
