@@ -1,65 +1,52 @@
-# Contributing to this project
+# Contributing to DaemonCores
 
-First off, thank you for considering contributing to this project! It's people like you that make this project such a great tool.
+DaemonCores accepts bug reports, design discussions, documentation corrections, and pull requests across its public repositories.
 
-## Code of Conduct
+## Choose the correct repository
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [guillou.gabriel@gmail.com].
+- Debian bootc packages, base image, or installer: `debian-bootc`
+- Proxmox image or host tools: `DaemonCores-VE`
+- reusable workflows and composite actions: `DaemonCores-CI`
+- phone research, device schema, or probe converter: `DaemonCores-Phone`
+- AlmaLinux prototype: `AlmaBuilder`
 
-## How Can I Contribute?
+Cross-repository changes should describe every affected caller and be coordinated before an interface is changed.
 
-### Reporting Bugs
+## Before opening an issue
 
-Before creating bug reports, please check the existing issues as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible:
+Search existing issues and include:
 
-* **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem** in as many details as possible.
-* **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples.
-* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
-* **Explain which behavior you expected to see instead and why.**
-* **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.
+- the repository, commit, image digest, or release artifact involved;
+- architecture and deployment method;
+- exact reproduction steps;
+- expected and observed behaviour;
+- relevant logs with credentials and personal data removed;
+- whether the problem also occurs in the upstream Debian, Proxmox, AlmaLinux, bootc, or OSTree project.
 
-### Suggesting Enhancements
+Do not report security vulnerabilities in a public issue. Follow [SECURITY.md](SECURITY.md).
 
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, please include:
+## Pull requests
 
-* **Use a clear and descriptive title** for the issue to identify the suggestion.
-* **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
-* **Provide specific examples to demonstrate the steps** or provide examples of how the enhancement would be used.
-* **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
-* **Explain why this enhancement would be useful** to most users.
+1. Create a focused branch from `main`.
+2. Keep generated, experimental, and released behaviour clearly separated.
+3. Add or update tests for changes to package builds, boot behaviour, manifests, scripts, or workflows.
+4. Update documentation in the same pull request when behaviour or interfaces change.
+5. Describe validation performed and any path that remains untested.
+6. Verify all required status checks before requesting review.
 
-### Pull Requests
+Use imperative, concise commit subjects. Conventional Commit prefixes are welcome but not required unless the target repository says otherwise.
 
-* Fill in the required template
-* Do not include issue numbers in the PR title
-* Follow the style guides
-* After you submit your pull request, verify that all status checks are passing
+## Documentation standard
 
-## Style Guides
+Documentation must distinguish among:
 
-### Git Commit Messages
+- code that exists in the repository;
+- behaviour exercised by CI;
+- behaviour validated on physical hardware;
+- planned or proposed work.
 
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
+Do not mark a feature complete based only on a design document, schema field, workflow placeholder, or theoretical compatibility.
 
-### Code Style
+## Code of conduct and license
 
-* Follow the existing code style in the project
-* Write clear, readable code with appropriate comments
-* Ensure all tests pass before submitting a pull request
-
-## Development Process
-
-1. Fork the repo and create your branch from `main`
-2. If you've added code that should be tested, add tests
-3. If you've changed APIs, update the documentation
-4. Ensure the test suite passes
-5. Make sure your code lints
-6. Issue that pull request!
-
-## License
-
-By contributing, you agree that your contributions will be licensed under the same license as the project.
+Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). Contributions are licensed under the license of the repository receiving them.
