@@ -1,5 +1,22 @@
 # DaemonCores
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DaemonCores/.github/refs/heads/main/assets/banner.svg" alt="AstralEmu Banner" width="100%"/>
+</p>
+
+<p>
+  <strong align="left">Simplify and Innovate for Everyone.</strong>
+  <a href="https://daemoncores.github.io"><img align="right" src="https://img.shields.io/badge/Wiki-FFFFFF?style=for-the-badge&logoColor=white" alt="Documentation"/></a>
+  <a href="https://github.com/orgs/DaemonCores/discussion"><img align="right" src="https://img.shields.io/badge/Community-000000?style=for-the-badge&logoColor=white" alt="Community"/></a>
+  <a href="https://github.com/DaemonCores/debian-bootc"><img align="right" src="https://img.shields.io/badge/Base_debian_for_all_project-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Community"/></a>
+  
+  <em>Identify gaps and fill them, make improvements where possible, but above all, empower developers to offer more to users.</em>
+</p>
+
+---
+
+# DaemonCores
+
 DaemonCores develops transactional Linux systems built and distributed as OCI images. The current work centres on bringing the bootc/OSTree model to Debian, using it as a base for an atomic Proxmox VE host, and maintaining the CI required to build, test, sign, and publish those systems.
 
 The organization started as a proof of concept. It is now being developed as an active engineering project, with repository status documented explicitly rather than implied by the organization name.
@@ -40,3 +57,12 @@ The individual repositories document their supported paths, current limitations,
 Issues and pull requests are welcome. For changes that affect image format, package manifests, boot behaviour, or shared CI interfaces, open an issue first so the design can be discussed across the affected repositories.
 
 Security reports should follow the private reporting process described in the organization-wide [`SECURITY.md`](https://github.com/DaemonCores/.github/blob/main/.github/SECURITY.md).
+
+---
+
+<p>
+  <strong align="left">Made with ⭐ by the DaemonCores community</strong>
+  <a href="https://daemoncores.github.io"><img align="right" src="https://img.shields.io/badge/Wiki-FFFFFF?style=for-the-badge&logoColor=white" alt="Documentation"/></a>
+  <a href="https://github.com/orgs/DaemonCores/discussion"><img align="right" src="https://img.shields.io/badge/Community-000000?style=for-the-badge&logoColor=white" alt="Community"/></a>
+  <a href="https://github.com/DaemonCores/debian-bootc"><img align="right" src="https://img.shields.io/badge/Base_debian_for_all_project-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Community"/></a>
+</p>
